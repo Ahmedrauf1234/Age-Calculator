@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @media(max-width: 600px){
+            .age-head{
+                font-size: 28px
+            }
+            .birth-head{
+                font-size: 10px;
+            }
+            .btn{
+                width: 90px;
+                font-size: 10px;
+                margin-top: 10px;
+            }
+            .age-text{
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-800">
+    <div   class="parant border-2 border-solid border-white w-[50%] m-auto rounded-lg bg-neutral-300 p-3 h-[300px] mt-10">
+        <div class="text-center">
+            <h1 class="text-black age-head font-bold text-4xl">Age Calculator</h1>
+        </div>
+        <div class="text-center">
+            <h3 class="text-black mt-5 birth-head" > Enter Your Birthdate :</h3>
+            <input maxlength="5" class=" rounded mt-3 border-2 border-solid border-black p-1 " type="date" name="" id="inp"> <button  class=" btn border-2 border-solid border-green-600 bg-green-600 p-1 text-white rounded" onclick="Calculator()">Calculate Age</button>
+        </div>
+        <h3 class="text-center age-text font-semibold text-2xl mt-5" id="text">
+        
+        </h3>
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
